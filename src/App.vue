@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { data } from "./data";
-const meal_data = ref([]);
+import { data, Meal } from "./data";
+const meal_data = ref<Meal[]>([]);
 onMounted(() => {
   meal_data.value = data;
 

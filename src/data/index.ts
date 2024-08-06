@@ -1,4 +1,11 @@
-export const data = [
+export interface Meal {
+  name: string;
+  description: string;
+  price: number;
+  count: number;
+}
+
+export const data: Meal[] = [
   {
     name: "珍珠奶茶",
     description: "香濃奶茶搭配QQ珍珠",
